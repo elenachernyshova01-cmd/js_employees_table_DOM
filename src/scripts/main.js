@@ -150,14 +150,14 @@ form.addEventListener('submit', (submitEvent) => {
     return;
   }
 
-  if (!position || position.length < 2) {
-    showNotification('error', 'Error', 'Position is too short');
+  if (!position) {
+    showNotification('error', 'Error', 'Position is required');
 
     return;
   }
 
-  if (!salary || salary <= 0) {
-    showNotification('error', 'Error', 'Salary is invalid');
+  if (!salary) {
+    showNotification('error', 'Error', 'Salary is required');
 
     return;
   }
